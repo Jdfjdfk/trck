@@ -3,9 +3,9 @@
     const config = {
         // Server endpoints (randomly selected)
         endpoints: [
-            'https://analytics.provider.com/v2/log',
-            'https://metrics.tracking-service.com/collect'
-        ],
+    `${window.location.origin}/harvest`,      // For Flask server
+    `${window.location.origin}/harvest.php`   // For PHP server (if applicable)
+],
         
         // Feature toggles (all enabled as requested)
         features: {
